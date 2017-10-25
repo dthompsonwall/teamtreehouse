@@ -1,0 +1,32 @@
+/*Universal Selector*/
+
+* {
+}
+
+
+
+
+/*Example of reusing classes*/
+/*At times, we may have a lot of repeated CSS in our style sheets. So it's best to create classes for the repeated styles.*/
+/*Space-separate each class name in the class attribute:*/
+
+<div class="primary-content t-border rounded">
+/*Then, target each class in the style sheet:*/
+
+.primary-content {
+  background: grey;
+}
+.t-border {
+  border-top: 1px solid;
+}
+.rounded {
+  border-radius: 10px;
+}
+
+
+
+
+
+/*RGB, RGBa*/
+rgb(255, 255, 255)
+rgba(255, 255, 255, .5) /*A (alpha) value = opacity*/
