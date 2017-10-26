@@ -1,3 +1,105 @@
-h1 {
-	color: blue;
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+a { 
+	text-decoration: none;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  margin: 0;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.main-header {
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+	padding: .001em 0;
+	background: #3acec2;
+}
+
+.main-header p {
+	padding: 0 0 1em;
+}
+
+.main-footer { 
+	text-align: center;
+	margin: 2em 0 0;
+	padding: 2em 0;
+	background: #d9e4ea;
+}
+
+/* ================================= 
+  Ordered Lists
+==================================== */
+
+.first-level {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.first-level>li>p {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.second-level {
+
+}
+
+.third-level>li>p {
+
+}
+
+.fourth-level>li>p {
+	font-size: .5em;
+}
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	.container {
+		width: 70%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
 }
